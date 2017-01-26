@@ -10,11 +10,11 @@ namespace Universidad.Entities
     {
         public int AlumnoId { get; set; }
 
+        public DateTime Created { get; set; }
+
         public String Codigo { get; set; }
 
-        public String ApellidoPaterno { get; set; }
-
-        public String ApellidoMaterno { get; set; }
+        public String Apellidos { get; set; }
 
         public String Nombres { get; set; }
 

@@ -12,3 +12,15 @@ D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.Migrati
 D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csproj.GenerateResource.Cache
 D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.dll
 D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.pdb
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Context.dll.config
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Context.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Context.pdb
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.SqlServer.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Entities.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Entities.pdb
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.xml
+D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.SqlServer.xml
+D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csprojResolveAssemblyReference.cache
+D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.pdb

@@ -22,7 +22,7 @@ namespace Universidad.Context.Entities.Configuration
 
             Property(b => b.Descripcion)
 		.IsRequired()
-		.HasMaxLength(255);
+		.HasMaxLength(50);
         }
     }
 }

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universidad.Entities", "Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universidad.Context", "Universidad.Context\Universidad.Context.csproj", "{8F91E1DE-5E22-404C-8B7C-CE059BC73796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Univesidad.MVC", "Univesidad.MVC\Univesidad.MVC.csproj", "{56D35956-8099-45E1-9E8E-5037E6D660B8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{8F91E1DE-5E22-404C-8B7C-CE059BC73796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F91E1DE-5E22-404C-8B7C-CE059BC73796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F91E1DE-5E22-404C-8B7C-CE059BC73796}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56D35956-8099-45E1-9E8E-5037E6D660B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56D35956-8099-45E1-9E8E-5037E6D660B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56D35956-8099-45E1-9E8E-5037E6D660B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56D35956-8099-45E1-9E8E-5037E6D660B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

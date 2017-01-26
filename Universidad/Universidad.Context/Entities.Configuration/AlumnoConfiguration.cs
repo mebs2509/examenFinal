@@ -16,11 +16,11 @@ namespace Universidad.Context.Entities.Configuration
 
             HasKey(c => c.AlumnoId);
 
-            Property(c => c.ApellidoMaterno).HasMaxLength(60);
+            Property(c => c.Created).IsRequired();
 
-            Property(c => c.ApellidoPaterno).HasMaxLength(60);
+            Property(c => c.Apellidos).HasMaxLength(50);
 
-            Property(c => c.Nombres).HasMaxLength(100);
+            Property(c => c.Nombres).HasMaxLength(50);
 
             Property(c => c.Codigo).HasMaxLength(10);
 
