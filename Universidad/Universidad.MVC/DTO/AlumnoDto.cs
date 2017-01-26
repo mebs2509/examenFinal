@@ -17,15 +17,12 @@ namespace Universidad.MVC.DTO
         public String Apellidos { get; set; }
 
         public String Nombres { get; set; }
-
-      
+              
         public int GeneroId { get; set; }
-
-
+        
         public GeneroDto Genero { get; set; }
 
- 
-        public int EstadoCivilId { get; set; }
+         public int EstadoCivilId { get; set; }
 
         public EstadoCivilDto EstadoCivil { get; set; }
 

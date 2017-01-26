@@ -22,7 +22,7 @@ D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\Universidad.Enti
 D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.xml
 D:\examen\examenFinal\Universidad\Universidad.Context\bin\Debug\EntityFramework.SqlServer.xml
 D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csprojResolveAssemblyReference.cache
-D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.dll
-D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.pdb
 D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.Migrations.SegundoModelo.resources
 D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csproj.GenerateResource.Cache
+D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.dll
+D:\examen\examenFinal\Universidad\Universidad.Context\obj\Debug\Universidad.Context.pdb

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
+using System.Data.Entity.QueryableExtensions.Include;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -49,9 +50,8 @@ namespace Universidad.MVC.Controllers.API
         public IHttpActionResult GetAlumnos() 
         {
             var alumnosDto = _db.Alumno
-                .Include(c => c.Genero)
-                .Include( c => c.EstadoCivil)
                 .ToList()
+                .Include(c => c.Genero)
                 .Select(Mapper.Map<Alumno, AlumnoDto>);
 
             return Ok(alumnosDto);

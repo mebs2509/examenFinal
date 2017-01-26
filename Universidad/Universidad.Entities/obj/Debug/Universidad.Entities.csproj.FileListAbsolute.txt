@@ -4,5 +4,6 @@ D:\Progra1\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.dll
 D:\Progra1\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.pdb
 D:\examen\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Entities.dll
 D:\examen\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Entities.pdb
+D:\examen\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.csprojResolveAssemblyReference.cache
 D:\examen\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.dll
 D:\examen\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.pdb
