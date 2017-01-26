@@ -16,7 +16,7 @@ namespace Universidad.Context.Entities.Configuration
 
             HasKey(c => c.AlumnoId);
 
-            Property(c => c.Created).IsRequired();
+            Property(c => c.Created);
 
             Property(c => c.Apellidos).HasMaxLength(50);
 
