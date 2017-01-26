@@ -1,0 +1,14 @@
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\Universidad.Context.dll.config
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\Universidad.Context.dll
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\Universidad.Context.pdb
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\EntityFramework.dll
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\EntityFramework.SqlServer.dll
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\Universidad.Entities.dll
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\Universidad.Entities.pdb
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\EntityFramework.xml
+D:\Progra1\Universidad\Universidad.Context\bin\Debug\EntityFramework.SqlServer.xml
+D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csprojResolveAssemblyReference.cache
+D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.Migrations.InitialModel.resources
+D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.csproj.GenerateResource.Cache
+D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.dll
+D:\Progra1\Universidad\Universidad.Context\obj\Debug\Universidad.Context.pdb
