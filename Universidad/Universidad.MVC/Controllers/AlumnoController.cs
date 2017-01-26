@@ -42,6 +42,7 @@ namespace Universidad.MVC.Controllers
         {
             ViewBag.EstadoCivilId = new SelectList(db.EstadoCivil, "Id", "Descripcion");
             ViewBag.GeneroId = new SelectList(db.Genero, "Id", "Descripcion");
+
             return View();
         }
 
@@ -54,6 +55,7 @@ namespace Universidad.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                alumno.Created = DateTime.Now;
                 db.Alumno.Add(alumno);
                 db.SaveChanges();
                 return RedirectToAction("Index");

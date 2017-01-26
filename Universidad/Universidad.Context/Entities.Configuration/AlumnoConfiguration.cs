@@ -24,6 +24,7 @@ namespace Universidad.Context.Entities.Configuration
 
             Property(c => c.Codigo).HasMaxLength(10);
 
+
             HasRequired(c => c.Genero)
                 .WithMany(c => c.Alumnos)
                 .HasForeignKey(c => c.GeneroId);

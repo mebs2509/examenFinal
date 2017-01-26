@@ -2,6 +2,8 @@ D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.MVC.dll.config
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.MVC.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.MVC.pdb
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Antlr3.Runtime.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\EntityFramework.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\EntityFramework.SqlServer.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Microsoft.Web.Infrastructure.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Newtonsoft.Json.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.Helpers.dll
@@ -11,7 +13,13 @@ D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.Razor.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.WebPages.Deployment.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.WebPages.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.WebPages.Razor.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.Context.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.Entities.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\WebGrease.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.Context.pdb
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\Universidad.Entities.pdb
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\EntityFramework.xml
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\EntityFramework.SqlServer.xml
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.Helpers.xml
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.Mvc.xml
 D:\examen\examenFinal\Universidad\Universidad.MVC\bin\System.Web.Optimization.xml
@@ -31,3 +39,5 @@ D:\examen\examenFinal\Universidad\Universidad.MVC\bin\es\System.Web.WebPages.Raz
 D:\examen\examenFinal\Universidad\Universidad.MVC\obj\Debug\Universidad.MVC.csprojResolveAssemblyReference.cache
 D:\examen\examenFinal\Universidad\Universidad.MVC\obj\Debug\Universidad.MVC.dll
 D:\examen\examenFinal\Universidad\Universidad.MVC\obj\Debug\Universidad.MVC.pdb
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\AutoMapper.dll
+D:\examen\examenFinal\Universidad\Universidad.MVC\bin\AutoMapper.xml
