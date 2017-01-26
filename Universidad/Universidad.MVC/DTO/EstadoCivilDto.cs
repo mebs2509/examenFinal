@@ -7,5 +7,11 @@ namespace Universidad.MVC.DTO
 {
     public class EstadoCivilDto
     {
+
+        public int Id { get; set; }
+
+        public String Descripcion { get; set; }
+
+
     }
 }

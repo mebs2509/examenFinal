@@ -140,6 +140,9 @@
     <Compile Include="Controllers\EstadoCivilController.cs" />
     <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DTO\AlumnoDto.cs" />
+    <Compile Include="DTO\EstadoCivilDto.cs" />
+    <Compile Include="DTO\GeneroDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

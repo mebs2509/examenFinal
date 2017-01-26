@@ -7,5 +7,9 @@ namespace Universidad.MVC.DTO
 {
     public class GeneroDto
     {
+
+        public int Id { get; set; }
+        
+        public String Descripcion { get; set; }
     }
 }

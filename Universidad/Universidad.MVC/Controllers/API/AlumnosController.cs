@@ -1,119 +1,60 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.Http.Description;
 using Universidad.Context;
 using Universidad.Entities;
+using Universidad.MVC.DTO;
 
 namespace Universidad.MVC.Controllers.API
 {
     public class AlumnosController : ApiController
     {
-        private UniversidadDbContext db = new UniversidadDbContext();
 
-        // GET: api/Alumnos
-        public IQueryable<Alumno> GetAlumno()
-        {
-            return db.Alumno;
-        }
+        private readonly UniversidadDbContext _db = new UniversidadDbContext();
 
-        // GET: api/Alumnos/5
-        [ResponseType(typeof(Alumno))]
-        public IHttpActionResult GetAlumno(int id)
-        {
-            Alumno alumno = db.Alumno.Find(id);
-            if (alumno == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(alumno);
-        }
-
-        // PUT: api/Alumnos/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutAlumno(int id, Alumno alumno)
+        //CREATE
+        //POST/api/alumnos
+        [HttpPost]
+        public IHttpActionResult CreateAlumno(AlumnoDto alumnoDto) 
         {
             if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != alumno.AlumnoId)
-            {
                 return BadRequest();
-            }
 
-            db.Entry(alumno).State = EntityState.Modified;
+            var alumno = Mapper.Map<AlumnoDto, Alumno>(alumnoDto);
+            if (alumnoDto == null)
+                return BadRequest();
 
             try
             {
-                db.SaveChanges();
+                _db.Alumno.Add(alumno);
+                _db.SaveChanges();
+                alumnoDto.AlumnoId = alumno.AlumnoId;
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbEntityValidationException e)
             {
-                if (!AlumnoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                Console.WriteLine(e.ToString());
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Created(new Uri(Request.RequestUri + "/" + alumno.AlumnoId), alumnoDto);
         }
-
-        // POST: api/Alumnos
-        [ResponseType(typeof(Alumno))]
-        public IHttpActionResult PostAlumno(Alumno alumno)
+        
+        //Read
+        //GET/api/Alumnos
+        [HttpGet]
+        public IHttpActionResult GetAlumnos() 
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            var alumnosDto = _db.Alumno
+                .Include(c => c.Genero)
+                .Include( c => c.EstadoCivil)
+                .ToList()
+                .Select(Mapper.Map<Alumno, AlumnoDto>);
 
-            db.Alumno.Add(alumno);
-            db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = alumno.AlumnoId }, alumno);
-        }
-
-        // DELETE: api/Alumnos/5
-        [ResponseType(typeof(Alumno))]
-        public IHttpActionResult DeleteAlumno(int id)
-        {
-            Alumno alumno = db.Alumno.Find(id);
-            if (alumno == null)
-            {
-                return NotFound();
-            }
-
-            db.Alumno.Remove(alumno);
-            db.SaveChanges();
-
-            return Ok(alumno);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool AlumnoExists(int id)
-        {
-            return db.Alumno.Count(e => e.AlumnoId == id) > 0;
+            return Ok(alumnosDto);
         }
     }
 }
