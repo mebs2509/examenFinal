@@ -52,9 +52,9 @@
     <Compile Include="Entities.Configuration\AlumnoConfiguration.cs" />
     <Compile Include="Entities.Configuration\EstadoCivilConfiguration.cs" />
     <Compile Include="Entities.Configuration\GeneroConfiguration.cs" />
-    <Compile Include="Migrations\201701260132536_Segundo Modelo.cs" />
-    <Compile Include="Migrations\201701260132536_Segundo Modelo.Designer.cs">
-      <DependentUpon>201701260132536_Segundo Modelo.cs</DependentUpon>
+    <Compile Include="Migrations\201701270247557_InitialModel.cs" />
+    <Compile Include="Migrations\201701270247557_InitialModel.Designer.cs">
+      <DependentUpon>201701270247557_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701260132536_Segundo Modelo.resx">
-      <DependentUpon>201701260132536_Segundo Modelo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701270247557_InitialModel.resx">
+      <DependentUpon>201701270247557_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

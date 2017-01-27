@@ -1,12 +1,10 @@
-﻿using AutoMapper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
-
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using AutoMapper;
 using Universidad.Context;
 using Universidad.Entities;
 using Universidad.MVC.DTO;
@@ -21,7 +19,8 @@ namespace Universidad.MVC.Controllers.API
         //CREATE
         //POST/api/alumnos
         [HttpPost]
-        public IHttpActionResult CreateAlumno(AlumnoDto alumnoDto) 
+
+        public IHttpActionResult CreateAlumno(AlumnoDto alumnoDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
@@ -43,19 +42,28 @@ namespace Universidad.MVC.Controllers.API
 
             return Created(new Uri(Request.RequestUri + "/" + alumno.AlumnoId), alumnoDto);
         }
-        
-        //Read
+
+        //READ
         //GET/api/Alumnos
         [HttpGet]
-        public IHttpActionResult GetAlumnos() 
+
+        public IHttpActionResult GetAlumnos()
         {
-            var alumnosDto = _db.Alumno
-
-                .ToList()
-            
-                .Select(Mapper.Map<Alumno, AlumnoDto>);
-
-            return Ok(alumnosDto);
+            return Ok(_db.Alumno.ToList().Select(Mapper.Map<Alumno, AlumnoDto>));
         }
+
+        //READ
+        //GET/api/alumnos/AlumnoId
+        [HttpGet]
+
+        public IHttpActionResult GetAlumno(int alumnoId)
+        {
+            var alumnoDb = _db.Alumno.SingleOrDefault(a => a.AlumnoId == alumnoId);
+            if (alumnoDb == null)
+                return NotFound();
+
+            return Ok(Mapper.Map<Alumno, AlumnoDto>(alumnoDb));
+        }
+
     }
 }

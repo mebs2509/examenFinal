@@ -6,3 +6,8 @@ D:\examen\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Ent
 D:\examen\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Entities.pdb
 D:\examen\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.dll
 D:\examen\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.pdb
+D:\terminar proyecto\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Entities.dll
+D:\terminar proyecto\examenFinal\Universidad\Universidad.Entities\bin\Debug\Universidad.Entities.pdb
+D:\terminar proyecto\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.csprojResolveAssemblyReference.cache
+D:\terminar proyecto\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.dll
+D:\terminar proyecto\examenFinal\Universidad\Universidad.Entities\obj\Debug\Universidad.Entities.pdb

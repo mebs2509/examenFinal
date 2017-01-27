@@ -12,14 +12,20 @@ namespace Universidad.MVC.App_Start
     {
         public MappingProfile()
         {
-            CreateMap<Alumno, AlumnoDto>();
-            CreateMap<AlumnoDto, Alumno>();
 
-            CreateMap<Genero, GeneroDto>();
-            CreateMap<GeneroDto, Genero>();
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Alumno, AlumnoDto>();
+                cfg.CreateMap<AlumnoDto, Alumno>();
 
-            CreateMap<EstadoCivil, EstadoCivilDto>();
-            CreateMap<EstadoCivilDto, EstadoCivil>();
+                cfg.CreateMap<Genero, GeneroDto>();
+                cfg.CreateMap<GeneroDto, Genero>();
+
+                cfg.CreateMap<EstadoCivil, EstadoCivilDto>();
+                cfg.CreateMap<EstadoCivilDto, EstadoCivil>();
+
+            });
+            
         }
     }
 }

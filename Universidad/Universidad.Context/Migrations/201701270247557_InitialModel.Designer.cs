@@ -7,13 +7,13 @@ namespace Universidad.Context.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class SegundoModelo : IMigrationMetadata
+    public sealed partial class InitialModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SegundoModelo));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201701260132536_Segundo Modelo"; }
+            get { return "201701270247557_InitialModel"; }
         }
         
         string IMigrationMetadata.Source
